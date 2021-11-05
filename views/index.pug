@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		title Plaisir.re
+		link(rel="stylesheet", href="/mystyles.css")
+	body
+		div(class='columns is-desktop'  style='padding-top: 100px')
+			div(class='column block has-text-centered  ')
+				h1(class='title is-size-1 has-text-white') BIENVENUE
+		div(class='columns is-desktop')
+			div(class='column has-text-centered  is-uppercase has-text-white')
+				p Pour commencer et savoir
+					br/ si vous êtes éligibles au plaisir
+		div(class='columns is-desktop')
+			div(class='column has-text-centered  is-uppercase has-text-white')
+				p merci de nous indiquer 
+					br/ votre numéro de département
+		form(action="http://localhost:3000" method="post")
+			div(class="columns is-mobile is-desktop")
+				div(class="column block field is-4 is-offset-4")
+					div(class='control')
+						input(class='input is-small', name='departement', id='dep', type='tel', placeholder='Departement')
+			div(class='columns is-desktop')
+				div(class='column block buttons has-text-centered has-text-white')
+					button(class='button is-dark' type='submit') VALIDER 
+
