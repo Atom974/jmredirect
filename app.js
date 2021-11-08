@@ -19,7 +19,8 @@ app.get('/', (req, res) => {
 	res.render('index')
 })
 app.post('/', (req, res) => {
-	if(req.body.departement.startsWith('974') && req.body.departement.lenght > 3 && req.body.departement.lenght < 5)
+
+	if(req.body.departement.startsWith('974') && req.body.departement.length >= 3 && req.body.departement.length <= 5)
 		res.redirect('https://www.jmstore.re/');
 	else
 		res.render('wrong')
