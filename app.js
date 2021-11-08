@@ -8,7 +8,6 @@ app.use(bodyParser.urlencoded({ extended: false }))
  
 app.use(bodyParser.json())
 app.set('view engine', 'pug')
-console.log(__dirname, '/css/');
 app.use(express.static(path.join(__dirname, '/public/')))
 
 //let __dirPath = '/view/';
@@ -23,5 +22,5 @@ app.post('/', (req, res) => {
 })
 
 app.listen(port, () => {
-	console.log(`example app listening at http://localhost:${port}`)
+	
 })
